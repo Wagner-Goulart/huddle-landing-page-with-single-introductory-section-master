@@ -1,0 +1,6 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --body-font-family: 'Open Sans', sans-serif;
+    --headings-font-family:'Poppins', sans-serif;
+}

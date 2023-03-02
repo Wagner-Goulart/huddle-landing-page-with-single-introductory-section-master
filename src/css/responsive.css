@@ -1,0 +1,57 @@
+@media (max-width: 1000px) {
+    body {
+        background: var( --violet) url(../images/bg-mobile.svg) no-repeat center center;
+    }
+    .main-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer ul {
+        padding: 5px;
+    }
+
+    .attribution-card {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .main-content {
+        padding: 5px 20px;
+        text-align: center;
+    }
+
+    .main-content .ilustration img {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 395px) {
+    .main-content {
+        padding: 5px 10px;
+        text-align: center;
+    }
+    .main-content .ilustration img {
+        width: 80%;
+    }
+
+    .main-content .huddle-description {
+        padding: 10px;
+    }
+    .footer {
+        padding: 30px;
+    }
+
+    .footer ul {
+        margin-bottom: 5px;
+    }
+}

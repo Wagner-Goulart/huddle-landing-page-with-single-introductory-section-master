@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--body-font-family);
+    display: grid;
+    grid-template-areas:    "header header"
+                            "main-content main-content"
+                            "footer footer";
+    grid-template-columns: 1fr 1fr;
+    background: var( --violet) url(../images/bg-desktop.svg) no-repeat center center;
+    color: #ffff;
+    font-weight: 400;
+}
+
+.header {
+    grid-area: header;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header .logo-img {
+    width: 150px;
+}
+
+.main-content {
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px 40px;
+}
+
+.ilustration img {
+    width: 100%;
+}
+
+.huddle-description {
+    padding: 5px 40px;
+    font-family: var(--headings-font-family);
+}
+
+.huddle-description h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.huddle-description p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.huddle-description .register-btn {
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.1rem;
+    color: var(--violet);
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.603);
+    transition: 0.4s;
+}
+
+.huddle-description .register-btn:hover {
+    color: #fff;
+    background-color: var(--soft-magenta);
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:20px 50px;
+}
+
+.footer .social ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .social ul li a i {
+    border: 1px solid #fff;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    line-height: 0.5;
+    transition: 0.4s;
+}
+
+.footer .social ul li a:hover i {
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+}
+
+.attribution-card a {
+    color: var(--soft-magenta);
+    transition: 0.3s;
+}
+
+.attribution-card a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
