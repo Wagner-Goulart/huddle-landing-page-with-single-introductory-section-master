@@ -24,5 +24,8 @@ O usuário deverá : <br>
 * CSS grid
 * CSS flexbox
 <br>
+
 ## Veja o site no ar 	:rocket:
+
+[Ver site](https://aesthetic-dasik-5ca870.netlify.app/)
 
