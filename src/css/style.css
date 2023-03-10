@@ -13,7 +13,8 @@ body {
                             "main-content main-content"
                             "footer footer";
     grid-template-columns: 1fr 1fr;
-    background: var( --violet) url(../images/bg-desktop.svg) no-repeat center center;
+    background: var( --violet) url(../images/bg-desktop.svg) no-repeat;
+    background-size: cover;
     color: #ffff;
     font-weight: 400;
 }
@@ -30,13 +31,15 @@ body {
 
 .main-content {
     grid-area: main-content;
+    max-width: 1440px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 5px 40px;
 }
 
 .ilustration img {
-    width: 100%;
+    width: 90%;
 }
 
 .huddle-description {
@@ -52,8 +55,9 @@ body {
 
 .huddle-description p {
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 30px;
+    letter-spacing: 1px;
 }
 
 .huddle-description .register-btn {
@@ -64,6 +68,7 @@ body {
     color: var(--violet);
     box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.603);
     transition: 0.4s;
+    cursor:pointer;
 }
 
 .huddle-description .register-btn:hover {
@@ -89,17 +94,20 @@ body {
     gap: 30px;
 }
 
-.footer .social ul li a i {
+.footer .social ul li a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #fff;
     font-size: 1.5rem;
-    padding: 15px;
+    width:40px;
+    height: 40px;
     border-radius: 50%;
     color: white;
-    line-height: 0.5;
     transition: 0.4s;
 }
 
-.footer .social ul li a:hover i {
+.footer .social ul li a:hover {
     color: var(--soft-magenta);
     border: 1px solid var(--soft-magenta);
 }
